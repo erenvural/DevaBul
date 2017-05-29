@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_receiverName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_messageContent"
+        android:layout_alignLeft="@+id/et_messageContent"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/et_messageContent"
+        android:layout_alignStart="@+id/et_messageContent"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_messageContent"
+        android:layout_width="wrap_content"
+        android:layout_height="370dp"
+        android:layout_weight="0.85"
+        android:ems="10"
+        android:hint="Mesajınızı Yazınız ..."
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:layout_below="@+id/tv_receiverName"
+        android:layout_alignLeft="@+id/bt_cancelMessage"
+        android:layout_alignStart="@+id/bt_cancelMessage"
+        android:layout_marginTop="28dp"
+        android:layout_alignRight="@+id/bt_sendMessage"
+        android:layout_alignEnd="@+id/bt_sendMessage" />
+
+    <Button
+        android:id="@+id/bt_cancelMessage"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Vazgeç"
+        android:textAlignment="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/et_messageContent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_sendMessage"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:text="Yolla"
+        android:layout_below="@+id/et_messageContent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

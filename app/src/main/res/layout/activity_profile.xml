@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_profilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        app:srcCompat="@drawable/common_full_open_on_phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="PROFİL SAYFASI"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_findUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="7dp"
+        android:text="Kullanıcı Bul"
+        android:textColor="@color/colorIcons"
+        android:layout_alignTop="@+id/fab_findUsers"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/nextImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:elevation="0dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        android:layout_below="@+id/iv_profilePicture"
+        android:layout_alignLeft="@+id/iv_profilePicture"
+        android:layout_alignStart="@+id/iv_profilePicture" />
+
+    <TextView
+        android:id="@+id/tv_uploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBirthday"
+        android:layout_alignBottom="@+id/tvBirthday"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/tvBirthday"
+        android:layout_toStartOf="@+id/tvBirthday"
+        android:background="@color/colorPrimary"
+        android:elevation="7dp"
+        android:text="Resim Yükle"
+        android:textColor="@color/colorIcons" />
+
+    <Switch
+        android:id="@+id/switchProfilStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nextImageButton"
+        android:layout_alignStart="@+id/nextImageButton"
+        android:layout_below="@+id/nextImageButton"
+        android:layout_marginTop="13dp"
+        android:layout_toStartOf="@+id/fab_findUsers"
+        android:checked="false"
+        android:text="Gizli Oturum"
+        tools:checked="false"
+        android:layout_toLeftOf="@+id/fab_findUsers"
+        android:layout_alignBottom="@+id/fab_findUsers" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Email:"
+        android:layout_below="@+id/tvProfile"
+        android:layout_alignLeft="@+id/tvProfile"
+        android:layout_alignStart="@+id/tvProfile" />
+
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doğum Günü:"
+        android:layout_below="@+id/iv_profilePicture"
+        android:layout_alignLeft="@+id/tvGender"
+        android:layout_alignStart="@+id/tvGender"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/sessionEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tvEmail"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:layout_toRightOf="@+id/tvGender"
+        android:layout_toEndOf="@+id/tvGender" />
+
+    <TextView
+        android:id="@+id/sessionBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tvBirthday"
+        android:layout_alignBottom="@+id/tvBirthday"
+        android:layout_alignRight="@+id/fab_findUsers"
+        android:layout_alignEnd="@+id/fab_findUsers" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyet:"
+        android:layout_below="@+id/tvBirthday"
+        android:layout_alignLeft="@+id/tvEmail"
+        android:layout_alignStart="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/sessionGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/sessionBirthday"
+        android:layout_toRightOf="@+id/tv_relatedDisease"
+        android:layout_toEndOf="@+id/tv_relatedDisease" />
+
+    <TextView
+        android:id="@+id/tvChooseDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="İlgilendiğiniz Hastalık:"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/switchProfilStatus"
+        android:layout_alignLeft="@+id/switchProfilStatus"
+        android:layout_alignStart="@+id/switchProfilStatus" />
+
+    <TextView
+        android:id="@+id/tv_relatedDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tvChooseDisease"
+        android:layout_alignBottom="@+id/tvChooseDisease"
+        android:layout_toRightOf="@+id/tvEmail"
+        android:layout_toEndOf="@+id/tvEmail" />
+
+    <Button
+        android:id="@+id/bt_changeRelatedDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:text="Değiştir"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/tv_relatedDisease"
+        android:layout_alignBottom="@+id/tv_relatedDisease"
+        android:layout_toRightOf="@+id/tvProfile"
+        android:layout_toEndOf="@+id/tvProfile" />
+
+    <TextView
+        android:id="@+id/tv_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tvProfile"
+        android:layout_alignBottom="@+id/tvProfile"
+        android:layout_toRightOf="@+id/tvProfile"
+        android:layout_toEndOf="@+id/tvProfile" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_findUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt_changeRelatedDisease"
+        android:layout_alignRight="@+id/bt_changeRelatedDisease"
+        android:layout_below="@+id/sessionGender"
+        android:clickable="true"
+        android:elevation="0dp"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TabHost
+        android:id="@+id/tabUsers"
+        android:layout_width="200dip"
+        android:layout_height="match_parent"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/bt_changeRelatedDisease"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_weight="2.56">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_followings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="268dp"
+                        android:scrollbars="horizontal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_followers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_profileFollowSubjects"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/lv_openedSubjects"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

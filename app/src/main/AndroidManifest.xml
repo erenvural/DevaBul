@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.patho.messenger">
+
+    <permission
+        android:name="com.patho.messenger.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Konum Bulma Permission-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Haritada Gösterme Permissin-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.patho.messenger.permission.MAPS_RECEIVE"/>
+    <application
+        android:name="com.patho.messenger.controller.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="DEVA-BUL"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.patho.messenger.activities.MessageActivity"
+            android:label="Mesajlar"
+            android:parentActivityName="com.patho.messenger.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.SendMessageActivity"
+            android:label="Mesaj Yollama">
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.FindUsersActivity"
+            android:label="Kullanıcıları Keşfet"
+            android:parentActivityName="com.patho.messenger.activities.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.OpenSubjectActivity"
+            android:label="Yeni Konu Açılışı"
+            android:parentActivityName="com.patho.messenger.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.SubjectActivity"
+            android:label="Konu">
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.DiseaseSuggestActivity"
+            android:label="Hastalık Önerileri"
+            android:parentActivityName="com.patho.messenger.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.DiseaseActivity"
+            android:label="Hastalık ve Açılan Konular"
+            android:parentActivityName="com.patho.messenger.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.UploadImageActivity"
+            android:label="RESİM YÜKLEME"
+            android:parentActivityName="com.patho.messenger.activities.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.UserAgreementActivity"
+            android:label="DEVA-BUL">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.LoginActivity"
+            android:label="DEVA-BUL">
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.ProfileActivity"
+            android:label="PROFİL"
+            android:parentActivityName="com.patho.messenger.activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.MainActivity"
+            android:label="ANASAYFA"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.patho.messenger.activities.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName="com.patho.messenger.activities.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.patho.messenger.activities.LoginActivity" />
+        </activity>
+        <activity android:name="com.patho.messenger.activities.MapActivity"
+                  android:parentActivityName="com.patho.messenger.activities.MainActivity"
+                  android:label="HARİTA"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.patho.messenger.activities.MainActivity"
+            />
+        <!-- GOOGLE API -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="*"/> <!-- have to write api code take from https://developers.google.com-->
+        <!-- <meta-data 
+             android:name="com.google.android.geo.API_KEY"
+             android:value="*"/>  -->
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/commentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:text="Yorum Gönderme "
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_Comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/commentTitle"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

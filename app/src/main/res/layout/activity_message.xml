@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_userList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Mesajlaşılan Kullanıcılar"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_messageHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Geçmişi"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/lv_messageUserList"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/lv_messageUserList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/tv_userList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_messageHistory"
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_messageHistory"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:scrollbars="horizontal"
+        android:textColor="@color/colorPrimaryText" />
+
+    <Button
+        android:id="@+id/bt_answerMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_messageHistory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tv_messageHistory"
+        android:layout_below="@+id/et_messageHistory"
+        android:text="Mesaj Yaz" />
+
+</RelativeLayout>

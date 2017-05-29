@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_follow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Takip Ediliyor"
+        android:textColor="@color/colorIcons"
+        android:layout_alignTop="@+id/bt_unfollow_status"
+        android:layout_alignLeft="@+id/tv_totalMessage"
+        android:layout_alignStart="@+id/tv_totalMessage" />
+
+    <Button
+        android:id="@+id/bt_unfollow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="11dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="TAKİP EDİLMİYOR"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/bt_follow_status"
+        android:layout_alignStart="@+id/bt_follow_status"
+        android:layout_alignRight="@+id/tv_other_related_disease"
+        android:layout_alignEnd="@+id/tv_other_related_disease" />
+
+    <TextView
+        android:id="@+id/tv_other_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="23dp"
+        android:text="Email:"
+        android:layout_below="@+id/tv_totalMessage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_other_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Cinsiyet"
+        android:layout_below="@+id/tv_other_email"
+        android:layout_alignLeft="@+id/tv_other_email"
+        android:layout_alignStart="@+id/tv_other_email" />
+
+    <TextView
+        android:id="@+id/tv_other_profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tv_other_email"
+        android:layout_alignBottom="@+id/tv_other_email"
+        android:layout_alignRight="@+id/bt_messageUser"
+        android:layout_alignEnd="@+id/bt_messageUser" />
+
+    <TextView
+        android:id="@+id/tv_other_profile_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tv_other_gender"
+        android:layout_alignBottom="@+id/tv_other_gender"
+        android:layout_alignLeft="@+id/tv_other_profile_disease"
+        android:layout_alignStart="@+id/tv_other_profile_disease" />
+
+    <TextView
+        android:id="@+id/tv_other_related_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="İlgilendiği Hastalık:"
+        android:layout_below="@+id/tv_other_gender"
+        android:layout_alignLeft="@+id/tv_other_gender"
+        android:layout_alignStart="@+id/tv_other_gender" />
+
+    <TextView
+        android:id="@+id/tv_other_profile_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tv_other_related_disease"
+        android:layout_alignBottom="@+id/tv_other_related_disease"
+        android:layout_alignLeft="@+id/tv_other_profile_email"
+        android:layout_alignStart="@+id/tv_other_profile_email" />
+
+    <Button
+        android:id="@+id/bt_messageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Bölümü"
+        android:textAllCaps="false"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@+id/bt_unfollow_status"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_totalMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesajlar:"
+        android:layout_alignBaseline="@+id/tv_message_number"
+        android:layout_alignBottom="@+id/tv_message_number"
+        android:layout_alignLeft="@+id/tv_other_email"
+        android:layout_alignStart="@+id/tv_other_email" />
+
+    <TextView
+        android:id="@+id/tv_message_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBottom="@+id/bt_messageUser"
+        android:layout_toRightOf="@+id/tv_totalMessage"
+        android:layout_toEndOf="@+id/tv_totalMessage" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "445104658124",
+    "project_id": "my-project-1488459961540"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445104658124:android:0b7081404ce7434c",
+        "android_client_info": {
+          "package_name": "com.patho.messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe5v7U3Opyvc7ybjOK32GOf3-V-CceatU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-96058592-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

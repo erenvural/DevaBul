@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.patho.messenger.activities.DiseaseActivity">
+
+    <Button
+        android:id="@+id/bt_openSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et_diseaseDescription"
+        android:layout_alignRight="@+id/et_diseaseDescription"
+        android:layout_below="@+id/et_diseaseDescription"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@android:drawable/ic_input_add"
+        android:elevation="0dp"
+        android:text="Konu Aç"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/et_diseaseDescription"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:duplicateParentState="false"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimaryText"
+        tools:textColor="@color/colorPrimaryText"
+        android:layout_below="@+id/tv_diseaseNameOnDA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_diseaseNameOnDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/lv_subjectList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/bt_openSubject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_openedSubjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Açılan Konular"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/bt_openSubject"
+        android:layout_alignBottom="@+id/bt_openSubject"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_subjectNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignBottom="@+id/tv_openedSubjects"
+        android:layout_toRightOf="@+id/tv_openedSubjects"
+        android:layout_toEndOf="@+id/tv_openedSubjects"
+        android:layout_alignTop="@+id/tv_openedSubjects" />
+
+</RelativeLayout>

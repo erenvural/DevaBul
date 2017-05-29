@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.patho.messenger.activities.MapActivity">
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_locations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/bt_showPlaces"
+        android:layout_toEndOf="@+id/tv_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_showPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/spinner_locations"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_toLeftOf="@+id/bt_takeSS"
+        android:layout_toStartOf="@+id/bt_takeSS"
+        android:background="@color/colorPrimary"
+        android:text="GÖSTER"
+        android:textColor="@color/colorIcons" />
+
+    <Button
+        android:id="@+id/bt_takeSS"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner_locations"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Ekran Görüntüsü Al"
+        android:textColor="@color/colorIcons" />
+</RelativeLayout>

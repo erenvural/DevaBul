@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.patho.messenger.activities.DiseaseActivity">
+
+    <TextView
+        android:id="@+id/tv_subjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textColorLink="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/et_subjectContent"
+        android:layout_width="wrap_content"
+        android:layout_height="165dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:scrollbars="horizontal"
+        android:textColor="@color/colorPrimaryText"
+        android:textColorLink="@color/colorPrimaryText"
+        android:layout_below="@+id/tv_subjectDisease"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_subjectOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_subjectTitle"
+        android:layout_marginTop="10dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/bt_displayAllSubjects"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv_subjectOwner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/actionModeCloseDrawable" />
+
+    <TextView
+        android:id="@+id/tv_subjectDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/tv_subjectOwner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:id="@+id/lv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/et_subjectContent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fb_addComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:elevation="0dp"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tv_addComment"
+        android:layout_alignStart="@+id/tv_addComment" />
+
+    <TextView
+        android:id="@+id/tv_addComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Yorum Ekle"
+        android:textColor="@color/colorIcons"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/fb_addComment"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_totalFollowers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tv_addComment"
+        android:layout_alignBottom="@+id/tv_addComment"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_commentNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/tv_subjectOwner"
+        android:layout_alignBottom="@+id/tv_subjectOwner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bt_followSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_totalFollowers"
+        android:background="@android:color/holo_orange_light"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

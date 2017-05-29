@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.patho.messenger.activities.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etUsername"
+        android:hint="Kullanıcı Adı"
+        android:maxLength="15"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignEnd="@+id/etPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:hint="Parola"
+        android:maxLength="15"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPasswordAgain"
+        android:hint="Parola Tekrar"
+        android:maxLength="15"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        tools:inputType="textEmailAddress|textEmailSubject"
+        android:layout_below="@+id/etPasswordAgain"
+        android:layout_alignLeft="@+id/etPasswordAgain"
+        android:layout_alignStart="@+id/etPasswordAgain"
+        android:maxLength="35" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etBirthday"
+        android:hint="Doğum Günü"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYDOL"
+        android:id="@+id/bRegister"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/radioSex"
+        android:layout_alignStart="@+id/radioSex"
+        android:layout_marginBottom="89dp" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bRegister"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            android:checked="true"
+            android:layout_weight="1"
+            android:layout_below="@+id/radioSex"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp" />
+
+        <RadioButton
+        android:id="@+id/radioFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kadın"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/bRegister"
+            android:layout_alignEnd="@+id/bRegister"
+            android:layout_marginBottom="64dp"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSampleBirthday"
+        android:text="(Örnek: 01.01.1900)"
+        android:layout_alignBaseline="@+id/etBirthday"
+        android:layout_alignBottom="@+id/etBirthday"
+        android:layout_toRightOf="@+id/radioSex"
+        android:layout_toEndOf="@+id/radioSex" />
+
+</RelativeLayout>

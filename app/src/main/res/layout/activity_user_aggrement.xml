@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:text="Kapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/bt_close" />
+
+    <Button
+        android:text="İLERİ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="56dp"
+        android:layout_marginEnd="56dp"
+        android:id="@+id/bt_forward"
+        android:layout_below="@+id/cb_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Kullanıcı Sözleşmesi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp" />
+
+    <CheckBox
+        android:text="Onaylıyorum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/cb_confirm"
+        android:layout_above="@+id/bt_close"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

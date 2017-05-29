@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_likeComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bt_like"
+        android:layout_toEndOf="@+id/tv_comentTotalLike"
+        android:layout_toRightOf="@+id/tv_comentTotalLike"
+        android:text="tv_likeText" />
+
+    <Button
+        android:id="@+id/bt_like"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:background="@android:drawable/btn_star_big_off"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_comentTotalLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Yorum Puanı: "
+        android:textStyle="bold"
+        android:layout_below="@+id/bt_like"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_unlike"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:background="@android:drawable/btn_star_big_on"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

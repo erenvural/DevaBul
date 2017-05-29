@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_suggestDisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hastalık Ekleme Önerisi"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_suggestName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hastalık Adı Giriniz..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_suggestType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hastalık türü giriniz..."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_suggestDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.02"
+        android:ems="10"
+        android:hint="Hastalık Hakkında Genel Bilgi Giriniz..."
+        android:inputType="textMultiLine" />
+
+</LinearLayout>
