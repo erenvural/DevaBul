@@ -1,7 +1,7 @@
 # DevaBul
 Deva-Bul is a Android mobile application that patients to exchange information in disease-dedicated forums. The application also will provide map benefits. Users can find their location and addresses of health institutions (Hospitals, Pharmacies etc.) .    
 Used Technologies: Java, Gradle, MySQL, PHP, Volley Library, Google APIs(Maps, Places)
-#########################################################################################################################################
+##############################################################################################
 
 Changes to do for the right work of the project
 _________________________________________________________________________________________________________________________________________
